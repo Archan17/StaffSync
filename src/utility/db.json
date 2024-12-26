@@ -1,0 +1,25 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@gmail.com",
+      "phone": "1234567890",
+      "teamId": 1
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "name": "Team A",
+      "departmentId": 1
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "Engineering"
+    }
+  ],
+  "projects": []
+}

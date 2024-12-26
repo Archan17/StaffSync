@@ -1,5 +1,6 @@
+import Navbar from "./Navbar.tsx";
 const Dashboard = () => {
-  return <div>dashboard</div>;
+  return <Navbar />;
 };
 
 export default Dashboard;
