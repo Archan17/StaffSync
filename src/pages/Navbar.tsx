@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <nav className="flex space-x-4 p-4 bg-slate-50">
+    <nav className="flex space-x-4 p-4 bg-slate-50 mb-6">
       <Link to="/department" className="hover:underline">
         Department
       </Link>
