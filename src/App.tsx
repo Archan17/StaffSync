@@ -1,18 +1,23 @@
-import Dashboard from "./pages/Dashboard";
-import { Route, Routes } from "react-router";
-import Employee from "./pages/Employee";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Department from "./pages/Department";
 import Project from "./pages/Project";
 import Team from "./pages/Team";
-import Department from "./pages/Department";
+import Employee from "./pages/Employee";
+
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Dashboard />} />
-      <Route path="/department" element={<Department />} />
-      <Route path="/project" element={<Project />} />
-      <Route path="/team" element={<Team />} />
-      <Route path="/employee" element={<Employee />} />
-    </Routes>
+    <div>
+      <Navbar />
+      <div className="container mx-auto p-4">
+        <Routes>
+          <Route path="/department" element={<Department />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/employee" element={<Employee />} />
+        </Routes>
+      </div>
+    </div>
   );
 };
 

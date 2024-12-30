@@ -1,4 +1,4 @@
-import Navbar from "./Navbar.tsx";
+import Navbar from "../components/Navbar.tsx";
 const Dashboard = () => {
   return <Navbar />;
 };
