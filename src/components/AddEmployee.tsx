@@ -1,7 +1,7 @@
 import React from "react";
-import Modal from "./Modal";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import EmployeeModal from "./EmployeeModal";
 
 interface AddEmployeeModalProps {
   isOpen: boolean;
@@ -31,7 +31,7 @@ const AddEmployeeModal: React.FC<AddEmployeeModalProps> = ({
   handleAdd,
 }) => {
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
+    <EmployeeModal isOpen={isOpen} onClose={onClose}>
       <div className="w-full max-w-2xl p-6">
         <h2 className="text-xl mb-4">Add Employee</h2>
         <Input
@@ -83,7 +83,7 @@ const AddEmployeeModal: React.FC<AddEmployeeModalProps> = ({
           </Button>
         </div>
       </div>
-    </Modal>
+    </EmployeeModal>
   );
 };
 
